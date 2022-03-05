@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Faculty Entry </title>
+   <link rel="stylesheet" href="clist.css">
+ </head>
+    <body>
+
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="../MenuPages/adminmenu.html">Menu</a></li>
+                <h2>Manage Accounts<h2>
+            </ul>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Menu panel -->
+        <div class="new-panel">
+
+            <div class="new-card">
+                <h3>Register Your Account!</h3>
+                <form action="register_account.php"  method = "post">
+                    <label> Full Name: </label><br>
+                    <input type = "text" name = "fullName"/><br>
+                    <label> Caldwell Email: </label><br>
+                    <input type = "email" name = "emailAddress"/><br>
+                    <label> Logon ID: </label><br>
+                    <input type = "text" name = "logonID"/><br>
+                    <label> Password: </label><br>
+                    <input type = "Password" name = "mypassword"><br>
+                    <label> Admin or User: </label>
+                    <select name="isAdmin" id="isAdmin">
+                        <option value="0" >User</option>
+                        <option value="1" >Admin</option>
+                    </select><br>
+                    <input type="submit" name="submit" value="Register"/>
+                </form>
+              </div>
+
+        </div>
+        <!-- Menu panel End -->
+        
+    </body>
+</html>

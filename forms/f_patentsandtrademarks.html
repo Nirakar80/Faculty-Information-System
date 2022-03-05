@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Patents and Trademarks Form</title>
+   <link rel = "stylesheet" href = "style.css">
+ </head>
+  <body>
+    <div class="main">
+      <h1>Patents and Trademarks Form</h1><hr>
+      <br>
+      <form action="p_patentsandtrademarks.php" method="post">
+        <label> Patent Title:</label>
+        <input type="text" name="patentTitle" maxlength="100" size="15"/><br><br>
+        
+        <label>Status:</label>
+        <select name="status" id="status">
+          <option value="---">- - - </option>
+          <option value="Applied For">Applied For</option>
+          <option value="Granted">Granted</option>
+          <option value="Denied">Denied</option>
+        </select><br><br>
+        
+        <label> Year Submitted:</label>
+        <input type="text" name="yearSubmitted" maxlength="11" size="15"/><br><br>
+        
+        <label> Academic Year:</label>
+        <select name="academicYear" id="academicYear">
+          <option value="---">- - - </option>
+          <option value="2010-2011">2010-2011</option>
+          <option value="2011-2012">2011-2012</option>
+          <option value="2012-2013">2012-2013</option>
+          <option value="2013-2014">2013-2014</option>
+          <option value="2014-2015">2014-2015</option>
+          <option value="2015-2016">2015-2016</option>
+          <option value="2016-2017">2016-2017</option>
+          <option value="2017-2018">2017-2018</option>
+          <option value="2018-2019">2018-2019</option>
+          <option value="2019-2020">2019-2020</option>
+          <option value="2020-2021">2020-2021</option>
+          <option value="2021-2022">2021-2022</option>
+          <option value="2022-2023">2022-2023</option>
+          <option value="2023-2024">2023-2024</option>
+          <option value="2024-2025">2024-2025</option>
+          <option value="2025-2026">2025-2026</option>
+          <option value="2026-2027">2026-2027</option>
+          <option value="2027-2028">2027-2028</option>
+          <option value="2028-2029">2028-2029</option>
+          <option value="2029-2030">2029-2030</option>
+        </select><br><br>
+        
+        <label>Research Type:</label>
+        <select name="researchType" id="researchType">
+          <option value="---">- - - </option>
+          <option value="Scholarship of Discovery">Scholarship of Discovery</option>
+          <option value="Scholarship of Application">Scholarship of Application</option>
+          <option value="Scholarship of Teaching">Scholarship of Teaching</option>
+          <option value="Scholarship of Integration">Scholarship of Integration</option>
+          <option value="Not counted as Separate Intellectual Contribution">Not counted as Separate Intellectual Contribution</option>
+        </select><br><br>
+        
+        <label> Description: </label><br>
+        <textarea type="textarea" rows="11" cols ="80" name="description" maxlength="250"></textarea><br><br>
+        <input type="submit" name="submit" value="Submit"/>
+      </form>
+    </div> 
+    </body>
+    </html> 

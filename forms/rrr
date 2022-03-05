@@ -1,0 +1,12 @@
+while($row=mysql_fetch_assoc($sql)){
+echo "<tr>
+	<td>".$row['ID']."</td>
+	<td>".$row['Title']."</td>
+	<td>".$row['YearContracted']."</td>
+	<td>".$row['FacultyID']."</td>
+	<td><a href='ubooks.php'>Edit</a></td>
+	<td><a href='ubooks.php?ID=126'>Edit</a></td>
+	</tr>";
+	$output = $row['ID'];
+$_SESSION['recid'] = $output;
+}
